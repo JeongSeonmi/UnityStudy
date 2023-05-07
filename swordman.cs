@@ -56,7 +56,7 @@ public class swordman : MonoBehaviour
         /*Landing Platform*/
         if(rigid.velocity.y < 0){
             Debug.DrawRay(rigid.position, Vector3.down, new Color(0, 1, 0)); //DrawRay() : 에디터 상에서만 Ray를 그려주는 함수, 색깔은 그냥 그린
-            //빔을 쏴서 맞는걸 확인, 정확한 판단을 위해서 거리(길이?) 설정
+            //빔을 쏴서 맞는걸 확인, 정확한 판단을 위해서 초록바 길이 설정
             RaycastHit2D rayHit = Physics2D.Raycast(rigid.position*0.5f, Vector3.down, 1, LayerMask.GetMask("Platform")); //GetMask(): 레이어 이름에 해당하는 정수값을 리턴하는 함수
             if(rayHit.collider != null){
                 if(rayHit.distance < 0.6f) animator.SetBool("jumping", false);
