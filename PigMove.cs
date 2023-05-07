@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+//얘도 슬라임처럼 밑에 구분 못하고 전진해버림
 public class PigMove : MonoBehaviour
 {
     Rigidbody2D rigid;
