@@ -26,7 +26,7 @@ public class SlimeMovee1 : MonoBehaviour
         Debug.DrawRay(frontVec, Vector3.down, new Color(0, 1, 0));
         RaycastHit2D rayHit = Physics2D.Raycast(frontVec, Vector3.down, 1, LayerMask.GetMask("Platform")); //GetMask(): 레이어 이름에 해당하는 정수값을 리턴하는 함수
         if(rayHit.collider == null){
-            Turn(); //방향이 반대
+            Turn(); //방향이 반대가 되도록 하는 함수
         }
     }
 
